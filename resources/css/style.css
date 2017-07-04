@@ -8,13 +8,13 @@ header {
   background-color: black;
   height: auto;
   width: 100%;
-  font-family: Helvetica;
   color: white;
 }
 
 .container {
   width: 960px;
   display: block;
+  border: 1px solid red;
 }
 
 .logo {
@@ -35,36 +35,69 @@ header {
   display: inline-block;
   margin-top: 0.66rem;
   margin-bottom: 0.66rem;
+  font-weight: bold;
+  font-family: Helvetica;
+
 }
 
 
 /*<!-- *****************Background photo - main content****************-->*/
 
 .background {
-  height: 25rem;
+  height: 30rem;
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   display: flex;
+  justify-content: center;
 }
 
 .promo-box {
-  font-family: Helvetica;
-  font-size: 1rem;
-  font-weight: bold;
   width: 20rem;
-  height: auto;
   background-color: black;
   color: white;
   margin-top: 9rem;
+  display: block;
+  padding: 2rem 3rem;
 }
 
 .promo-box h3 {
-  margin: 2rem 0 0 3rem;
+  padding-bottom: 0.25rem;
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .promo-box h2 {
-  margin: 2rem 0 0 3rem;
-
+  font-family: Helvetica;
+  font-size: 2rem;
+  font-weight: bold;
 }
+
+
+/*<!--********************Navigation bar *********************-->*/
+
+.navigation {
+  background-color: firebrick;
+  padding: 0.75rem 0;
+  display: block;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.list {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.list a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+
+/*<!--************************* GALLERY **************************-->*/
