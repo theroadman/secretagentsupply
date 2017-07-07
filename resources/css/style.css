@@ -14,7 +14,6 @@ header {
 .container {
   width: 960px;
   display: block;
-  border: 1px solid red;
 }
 
 .logo {
@@ -22,7 +21,6 @@ header {
   align-items: center;
   font-size: 1rem;
   margin: auto;
-  border: 1px solid red;
 }
 
 .logo img {
@@ -80,11 +78,12 @@ header {
 
 .navigation {
   background-color: firebrick;
-  padding: 0.75rem 0;
+  padding: 0.85rem 0;
   display: block;
   display: flex;
   justify-content: center;
   color: white;
+  font-size: 1.25rem;
 }
 
 .list {
@@ -99,6 +98,10 @@ header {
   font-weight: bold;
 }
 
+.menu {
+  display: none;
+}
+
 
 /*<!--************************* GALLERY **************************-->*/
 
@@ -111,7 +114,7 @@ header {
   justify-content: space-between;
 }
 
-.cell {
+.cell, .cell-2, .cell-3 {
   display: block;
   width: 30%;
 }
@@ -125,7 +128,7 @@ header {
   padding: 2rem;
 }
 
-div.cell img {
+.cell img, .cell-2 img, .cell-3 img {
   max-width: 9rem;
   max-height: 9rem;
   padding: 3rem;
@@ -135,10 +138,10 @@ div.cell img {
 
 }
 
-.cell span {
+.cell span, .cell-2 span, .cell-3 span {
   display: block;
   background-color: black;
-  padding: 0.6rem;
+  padding: 0.8rem;
   color: white;
   font-size: 1.2rem;
   text-align: center;
@@ -158,7 +161,7 @@ div.cell img {
   justify-content: space-between;
 }
 
-.celltwo {
+.celltwo, .cellone {
   display: block;
   width: 35%;
 }
@@ -196,4 +199,58 @@ footer {
   width: 960px;
   margin: 0 auto;
   padding-top: 2rem;
+}
+
+
+/********************MEDIA QUERY ***********************/
+
+@media only screen and (max-width: 1024px) {
+  .cell-3 {
+    display: none;
+  }
+
+  .gallery {
+    width: 960px;
+    height: auto;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .cell-2, .celltwo {
+    margin-left: 2rem;
+  }
+
+  .block {
+    width: 960px;
+    height: auto;
+    margin: 3rem auto 4rem auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .cell, .cell-2 {
+    width: 35%;
+  }
+
+    .cellone, .celltwo {
+    width: 35%;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    margin: 0 auto;
+    font-family: Helvetica;
+    text-align: center;
+  }
+
+  .menu a {
+    color: white;
+    text-decoration: none;
+  }
 }
