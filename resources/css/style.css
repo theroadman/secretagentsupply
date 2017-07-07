@@ -26,7 +26,6 @@ header {
 .logo img {
   margin: 0 1rem 0 0.5rem;
   height: 1.5rem;
-
 }
 
 .logo h1 {
@@ -205,17 +204,21 @@ footer {
 /********************MEDIA QUERY ***********************/
 
 @media only screen and (max-width: 1024px) {
+  html {
+    width: 100%;
+  }
   .cell-3 {
     display: none;
   }
 
   .gallery {
-    width: 960px;
+    width: 100%;
     height: auto;
     margin: 3rem auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+
   }
 
   .cell-2, .celltwo {
@@ -223,15 +226,17 @@ footer {
   }
 
   .block {
-    width: 960px;
+    width: 100%;
     height: auto;
-    margin: 3rem auto 4rem auto;
+    margin: 3rem auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: row;
   }
 
   .cell, .cell-2 {
     width: 35%;
+    margin: 0 auto;
   }
 
     .cellone, .celltwo {
@@ -253,4 +258,77 @@ footer {
     color: white;
     text-decoration: none;
   }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .header-text {
+    display: none;
+  }
+
+  .logo img {
+    height: 2rem;
+    margin: 1.5rem 50%;
+  }
+
+.background {
+  height: 20rem;
+  width: 100%;
+}
+
+.promo-box {
+  width: 100%;
+  padding: 2rem 3rem;
+  margin-top: 14rem;
+}
+
+.promo-box h3 {
+  padding-bottom: 0.25rem;
+  padding-top: 0.5rem;
+  font-size: 0.77rem;
+}
+
+.promo-box h2 {
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.cell {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cell-2 {
+  display: none;
+}
+
+.block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cellone, .celltwo {
+  width: 90%;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+.copytext {
+  width: 100%;
+}
+
+
+
 }
